@@ -38,17 +38,21 @@
     </nav>
 
     <main>
-        <h1 class="text-center">Contact Us</h1>
+        <h1 class="text-center" id="contactUs" onclick="changeContactUsHeading()">Contact Us</h1>
         <div class="row">
-            <div class="col-2"></div>
+            <div class="col-2" id="alignmentPadding"></div>
             <div class="col-8">
-                <div class="rounded border bg-light" style="margin-bottom: 40px;">
+                <div class="rounded border bg-light" style="margin-bottom: 40px;" onmouseover="changeContactDetailsAlignment()">
                     <p>Address: 4 Long St., Auckland, New Zealand</p>
                     <p>Ph: (+64) 443 8643 8745</p>
                     <p>Email: info@captivateinteriors.co.nz</p>
                     <p>Fax: (+64) 443 8643 8746</p>
                 </div>
-
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
                 <form class="bg-light rounded border">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -69,7 +73,6 @@
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
-            <div class="col-2"></div>
         </div>
     </main>
 
@@ -83,6 +86,7 @@
             </div>
         </header>
     </footer>
+    <script src="/scripts/contact.js"></script>
 </body>
 
 </html>
