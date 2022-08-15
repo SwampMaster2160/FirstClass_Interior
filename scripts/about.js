@@ -12,3 +12,18 @@ function toggleCEOToMD() {
         document.getElementById("ceoImage").src = "/images/ceo.jpg";
     }
 }
+
+function hideStaffMember(staffID) {
+    var staff = document.getElementById("staff" + staffID);
+    staff.hidden = true;
+}
+
+function showHideButton(staffID) {
+    var button = document.getElementById("hideButton" + staffID);
+    button.hidden = false;
+}
+
+function hideHideButton(staffID) {
+    var button = document.getElementById("hideButton" + staffID);
+    button.hidden = true;
+}
